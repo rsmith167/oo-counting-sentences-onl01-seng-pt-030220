@@ -20,12 +20,12 @@ self.end_with?("!")
     
     if self.sentence?
       sen = self.split("!")
-      sen.each do |cell|
+      sen.each_with_index do |cell, index|
        if cell.include?("?")
-         cell = cell.split("?")
+         sen[index] = cell.split("?")
        end
        if cell.include?(".")
-         cell = cell.split(".")
+         sen.index = cell.split(".")
        end
      end
     else
