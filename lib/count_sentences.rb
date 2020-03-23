@@ -16,6 +16,10 @@ self.end_with?("!")
   end
 
   def count_sentences
+    
+    sen = ""
+    sen
+    
   end
   
 end
