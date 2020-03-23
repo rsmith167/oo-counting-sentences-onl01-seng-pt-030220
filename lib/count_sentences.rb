@@ -27,3 +27,4 @@ self.end_with?("!")
   end
   end
 end
+end
