@@ -18,5 +18,7 @@ self.end_with?("!")
   def count_sentences
     sentence_array = []
   sentence_array  = self.split("?")
+   sentence_array  = self.split("?")
+   sentence_array  = self.split("?")
   end
 end
