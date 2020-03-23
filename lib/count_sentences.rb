@@ -24,10 +24,18 @@ self.end_with?("!")
        elsif self.exclamation?
        sentence_array = self.split("!")
       end
-    
-    while sentence_array.include?("."||"?"||"!")
-    sentence_array = sentence_array.split(".")
-    
+    sentence_array.each do |string|
+      if string.include?(".")
+      sentence_array << sentence_array.split(".")
+    end
+    if string.include?("?")
+      sentence_array << sentence_array.split("?")
+    end
+    if string.include?("!")
+      sentence_array << sentence_array.split("!")
+    end
+    sentence_array.count_sentences
   end
-
+    
+  
 end
