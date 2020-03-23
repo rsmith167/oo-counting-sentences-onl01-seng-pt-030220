@@ -34,7 +34,7 @@ self.end_with?("!")
     if string.include?("!")
       sentence_array << sentence_array.split("!")
     end
-    sentence_array.count_sentences
+    sentence_array.count
   end
   end
   
