@@ -25,20 +25,3 @@ self.end_with?("!")
     sen = self.split(".")
     sen.count
     end
-    counter = 0
-    place = sen.length
-    loop do
-    sen[counter] = sen[counter].split(".")
-    sen[counter] = sen[counter].split("?")
-    sen[counter] = sen[counter].split("!")
-    holder = sen.length
-    counter+=1
-    if holder > place
-      place = sen.length
-    end
-    if counter >= sen.length
-      break
-    end
-  end 
-  end
-end
