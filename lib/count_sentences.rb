@@ -17,12 +17,18 @@ self.end_with?("!")
 
   def count_sentences
     sen = ""
+    
     if self.sentence?
-    sen = self.split("?")
+             if self.include?("?")
+          sen = self.split("?")
+        elsif self.include("!")
+        sen = self.split("!")
+      end
     else
     sen = self.split(".")
     end
-    
+    sen.each do |cell|
+      cell.
   end
   
 end
