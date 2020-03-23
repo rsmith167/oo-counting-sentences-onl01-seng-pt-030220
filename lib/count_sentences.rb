@@ -19,19 +19,21 @@ self.end_with?("!")
     sen = ""
     
     if self.sentence?
-      sen = self.split("!")
-      sen.each_with_index do |cell, index|
-       if cell.include?("?")
-         sen[index] = cell.split("?")
-       end
-       if cell.include?(".")
-         sen.index = cell.split(".")
-       end
-     end
+      sen = self.split(" ")
+index_counter = []
+sen.each_with_index do |value, index|
+if value.sentence? || value.question? || value.exclamation?
+index_counter << index
+end
+end
+index_counter.count
+	
+
     else
     sen = self.split(".")
     sen.count
     end
     
   end
+end
 end
