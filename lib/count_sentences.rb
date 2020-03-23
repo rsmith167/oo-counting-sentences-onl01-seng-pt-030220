@@ -16,11 +16,6 @@ self.end_with?("!")
   end
 
   def count_sentences
-    
-    sen = ""
-    if self.index("!") < self.index("?")
-      
-    
   end
   
 end
