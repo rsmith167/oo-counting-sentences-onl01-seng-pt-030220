@@ -36,6 +36,6 @@ self.end_with?("!")
     end
     sentence_array.count_sentences
   end
-    
+  end
   
 end
