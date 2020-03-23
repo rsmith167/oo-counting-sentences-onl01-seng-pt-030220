@@ -17,12 +17,12 @@ self.end_with?("!")
 
   def count_sentences
     sentence_array = ""
-     if self.sentence?
-       sentence_array = self.split(".")
-       elsif self.question?
-       sentence_array = self.split("?")
-       elsif self.exclamation?
-       sentence_array = self.split("!")
+     if sen.sentence?
+       sentence_array = sen.split(".")
+       elsif sen.question?
+       sentence_array = sen.split("?")
+       elsif sen.exclamation?
+       sentence_array = sen.split("!")
       end
     sentence_array.each do |string|
       if string.include?(".")
