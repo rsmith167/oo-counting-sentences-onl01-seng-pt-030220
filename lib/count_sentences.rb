@@ -16,8 +16,9 @@ self.end_with?("!")
   end
 
   def count_sentences
-    sen = self.split(".")
-    sen.each do |cell|
+    
+    sen = ""
+    if self.index("!") < self.index("?")
       
     
   end
