@@ -19,20 +19,22 @@ self.end_with?("!")
     sen = ""
     
     if self.sentence?
-      if self.include?("?")
-      sen = self.split("?")
-      elsif self.include("!")
       sen = self.split("!")
       end
     else
     sen = self.split(".")
     sen.count
     end
-    
-    for( i = 0; i > 0; i--)
+    place = sen.length
+    for( i = 0; i < sen.length; i++)
     {
-      
-    
+    holder = sen.length
+    sen[i] = sen[i].split(".")
+    sen[i] = sen[i].split("?")
+    if holder > place
+      i = 0
+      place = sen.length
+    end
     }
     
     
