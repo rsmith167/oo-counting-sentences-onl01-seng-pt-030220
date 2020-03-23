@@ -20,6 +20,13 @@ self.end_with?("!")
     
     if self.sentence?
       sen = self.split("!")
+      sen.each do |cell|
+       if cell.include?("?")
+         cell = cell.split("?")
+       if cell.include?(".")
+         cell = cell.split(".")
+       end
+     end
     else
     sen = self.split(".")
     sen.count
