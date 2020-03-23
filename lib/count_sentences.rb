@@ -26,7 +26,7 @@ if value.sentence? || value.question? || value.exclamation?
 index_counter << index
 end
 end
-index_counter.count
+return index_counter.count
 	
 
     else
@@ -34,6 +34,6 @@ index_counter.count
     sen.count
     end
     
-  end
+  
 end
 end
