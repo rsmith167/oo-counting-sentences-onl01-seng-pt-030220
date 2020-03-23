@@ -26,7 +26,7 @@ self.end_with?("!")
       end
     sentence_array.each do |string|
       if  sentence_array.include?(".")
-      sentence_array << sentence_array.split(".")
+      sentence_array << sentence_array[0].split(".")
     end
     if string.include?("?")
       sentence_array << sentence_array.split("?")
