@@ -17,14 +17,6 @@ self.end_with?("!")
 
   def count_sentences
     sentence_array = []
-    while self.sentence? || self.question? || self.exclamation?
-    if self.sentence?
-   sentence_array  << self.split(".")
-   elsif self.question?
-   sentence_array  = self.split("?")
-    elsif self.exclamation?
-   sentence_array  = self.split("?")
-  end
   end
 end
 end
