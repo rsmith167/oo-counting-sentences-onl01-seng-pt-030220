@@ -20,8 +20,14 @@ self.end_with?("!")
     sen = self.split(".")
     sen = sen.split("?")
     sen = sen.split("!")
+    i = sen.count_sentences
     sen.each do |sentence|
-      
+      if sentence.length = 0
+        i-=1
+      end
+    end
+    i
+        
   end
   
 end
