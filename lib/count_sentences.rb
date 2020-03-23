@@ -28,9 +28,9 @@ self.end_with?("!")
     counter = 0
     place = sen.length
     loop do
-    
     sen[counter] = sen[counter].split(".")
     sen[counter] = sen[counter].split("?")
+    sen[counter] = sen[counter].split("!")
     holder = sen.length
     if holder > place
       counter = 0
