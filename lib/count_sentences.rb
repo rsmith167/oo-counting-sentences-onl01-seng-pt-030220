@@ -29,7 +29,11 @@ self.end_with?("!")
     sen.count
     end
     
-    for( i = sen.lenght)
+    for( i = 0; i > 0; i--)
+    {
+      
+    
+    }
     
     
     
