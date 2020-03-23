@@ -23,6 +23,7 @@ self.end_with?("!")
       sen.each do |cell|
        if cell.include?("?")
          cell = cell.split("?")
+       end
        if cell.include?(".")
          cell = cell.split(".")
        end
