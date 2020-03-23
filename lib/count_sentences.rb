@@ -28,6 +28,16 @@ self.end_with?("!")
     sen = self.split(".")
     sen.count
     end
+    
+    for( i = sen.lenght)
+    
+    
+    
   end
+  
+  
+  
+  
+  
   
 end
