@@ -20,6 +20,9 @@ self.end_with?("!")
     if self.sentence?
       sen = self.split(". ")
       sen = sen.split("? ")
+      elsif   if self.question?
+      sen = self.split(". ")
+      sen = sen.split("! ")
     
     
   end
