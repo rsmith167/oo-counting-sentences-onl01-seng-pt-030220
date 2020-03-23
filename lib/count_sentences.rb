@@ -21,15 +21,12 @@ self.end_with?("!")
     if self.sentence?
       if self.include?("?")
       sen = self.split("?")
-      
       elsif self.include("!")
       sen = self.split("!")
       end
-      
-      
-      
     else
     sen = self.split(".")
+    sen.count
     end
   end
   
