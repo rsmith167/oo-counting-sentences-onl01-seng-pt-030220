@@ -18,7 +18,7 @@ self.end_with?("!")
   def count_sentences
     sen = ""
     
-    if self.sentence?
+  
       sen = self.split(" ")
 index_counter = []
 sen.each_with_index do |value, index|
@@ -29,11 +29,5 @@ end
 return index_counter.count
 	
 
-    else
-    sen = self.split(".")
-    sen.count
-    end
-    
-  
 end
 end
