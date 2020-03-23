@@ -16,17 +16,9 @@ self.end_with?("!")
   end
 
   def count_sentences
-    sen = ""
-    if self.sentence?
-      sen = self.split("! ")
-      sen = sen.split("? ")
-      elsif   self.question?
-      sen = self.split(". ")
-      sen = sen.split("! ")
-       elsif   self.exclamation?
-      sen = self.split(". ")
-      sen = sen.split("? ")
-    end
+    sen = self.split(".")
+    sen.each do |cell|
+      
     
   end
   
