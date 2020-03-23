@@ -20,7 +20,7 @@ self.end_with?("!")
     
     if self.sentence?
       sen = self.split("!")
-      end
+      
     else
     sen = self.split(".")
     sen.count
