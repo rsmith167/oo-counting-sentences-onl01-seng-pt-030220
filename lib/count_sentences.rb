@@ -39,6 +39,3 @@ self.end_with?("!")
   end
   
 end
-
-
-"This is a string! It has three sentences. Right?".count_sentences
