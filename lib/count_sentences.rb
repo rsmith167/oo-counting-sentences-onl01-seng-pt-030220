@@ -34,7 +34,6 @@ self.end_with?("!")
     holder = sen.length
     counter+=1
     if holder > place
-      counter = 0
       place = sen.length
     end
     if counter >= sen.length
