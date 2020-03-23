@@ -22,6 +22,7 @@ self.end_with?("!")
         i+=1
       end
       i
+    end
     
   end
   
