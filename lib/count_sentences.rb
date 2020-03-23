@@ -16,13 +16,11 @@ self.end_with?("!")
   end
 
   def count_sentences
-    i = 0
-    self.each do |letter|
-      if letter == letter.capitalize
-        i+=1
-      end
-      i
-    end
+    sen = ""
+    if self.sentence?
+      sen = self.split(". ")
+      sen = sen.split("? ")
+    
     
   end
   
