@@ -32,6 +32,7 @@ self.end_with?("!")
     sen[counter] = sen[counter].split("?")
     sen[counter] = sen[counter].split("!")
     holder = sen.length
+    counter+=1
     if holder > place
       counter = 0
       place = sen.length
