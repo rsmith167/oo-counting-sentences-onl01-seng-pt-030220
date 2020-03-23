@@ -17,17 +17,17 @@ self.end_with?("!")
 
   def count_sentences
     sen = ""
-    sen = self.split(".")
-    sen = sen.split("?")
-    sen = sen.split("!")
-    i = sen.count_sentences
-    sen.each do |sentence|
-      if sentence.length = 0
-        i-=1
-      end
+    if self.sentence?
+      sen = self.split("! ")
+      sen = sen.split("? ")
+      elsif   self.question?
+      sen = self.split(". ")
+      sen = sen.split("! ")
+       elsif   self.exclamation?
+      sen = self.split(". ")
+      sen = sen.split("? ")
     end
-    i
-        
+    
   end
   
 end
